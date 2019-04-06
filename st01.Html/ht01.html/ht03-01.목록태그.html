@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+
+    <pre>
+        목록 태그:
+        ul/li  :
+        ol/li  :
+        dl/dt/dd :
+    </pre>
+
+    <h2>기호 목록 태그 : ul</h2>
+    <!-- 기호 : disc -->
+    <ul>
+        <li>사과</li>
+        <li>바나나</li>
+        <li>오렌지</li>
+    </ul>
+    <!-- 기호 : square -->
+    <ul style="list-style-type:square">
+        <li>사과</li>
+        <li>바나나</li>
+        <li>오렌지</li>
+    </ul>
+    <!-- 기호 : circle -->
+    <ul style="list-style-type:circle">
+        <li>사과</li>
+        <li>바나나</li>
+        <li>오렌지</li>
+    </ul>
+    <h2>번호 목록 태그 : ol</h2>
+    <!-- 기호 : 숫자 -->
+    <ol style="list-style-type: lower-alpha;">
+        <li>사과</li>
+        <li>바나나</li>
+        <li>오렌지</li>
+    </ol>
+    <!-- 기호 : 로마숫자 -->
+    <ol style="list-style-type: lower-roman;">
+        <li>사과</li>
+        <li>바나나</li>
+        <li>오렌지</li>
+    </ol>
+
+    <h2>정의 목록: dl/dt/dd</h2>
+    <dl>
+        <dd>과일</dd>
+        <dd>사과</dd>
+        <dd>바나나</dd>
+        <dd>오렌지</dd>
+    </dl>
+
+    <h2>번호 목록 태그 + 정의 목록의 결합</h2>
+
+
+    <h2>정의 목록의 결합 + 번호 목록 태그</h2>
+
+    <h2>기호 목록(ul) 태그 + 기호(ul) 목록 태그 결합</h2>
+
+
+    <!-- ul을 사용하여 아래 구조의 메뉴를 만들어 보자. page 73 참조
+
+        회사소개 
+            인사말
+            오시는길
+        사업분야
+            디자인
+            개발
+        BBS
+            공지사항
+            QnA
+
+            <ul style="list-style-type: circle">
+                <li>
+                    회사소개
+                    <ul>
+                        <li>인사말</li>
+                        <li>오시는길</li>
+                    </ul>
+                    사업분야
+                    <ul>
+                        <li>인사말</li>
+                        <li>오시는길</li>
+
+                        BBS
+                        <ul>
+                            <li>공지사항</li>
+                            <li>QnA</li>
+                        </ul>
+
+                </li>
+
+                <li>
+                    사업분야
+                </li>
+    -->
+
+        <ul>
+            <li>회사소개
+                <ul>
+                    <li>인사말</li>
+                    <li>오시는길</li>
+                </ul>
+            </li>
+            <li>사업분야
+                <ul>
+                    <li>디자인/li>
+                    <li>개발</li>
+                </ul>    
+            </li>
+            <li>BBS
+                <ul>
+                    <li>공지사항</li>
+                    <li>QnA</li>
+                </ul>
+            </li>
+        </ul>
+
+</body>
+
+</html>
