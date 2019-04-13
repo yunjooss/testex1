@@ -4,18 +4,56 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
+ 
+        label {
+            width: 100px;
+            display: inline-block; } 
+            
+        #memo { vertical-align: top; }
+        
+        span { width: 300px; display : inline-block; }
+        
+        #p1 { width: 50px; }
+        #p2 { width: 50px; }
+        #p3 { width: 50px; }
     </style>
 </head>
 <body>
-    <h1>��ǰ �ֹ���</h1>
+    <form action="">
+    <h1>상품주문서</h1>
+        <fieldset>
+            <legend>개인정보</legend>
+            <label for="aa">이름</label> <input type="text" id="aa" placeholder="이름을 입력하시오">
+            <br>
+            <label for="bb">연락처</label> <input type="tel" id="bb" placeholder="연락처를 입력하시오">
+            <br>           
+        </fieldset>
 
-        <!-- ���� ���� -->
+        <fieldset>
+            <legend>배송지 정보</legend>
+            <label for="aaa">주소</label> <input type="text" required id="aaa">
+            <br>
+            <label for="bbb">전화번호</label> <input type="tel" required id="bbb">
+            <br>
+            <label for="ccc" id="memo">메모</label>
+            <textarea name=""  cols="10" rows="10"></textarea>
 
-        <!-- ����� ���� -->
+        </fieldset>
 
-        <!-- �ֹ� ���� -->
+        <fieldset>
+            <legend>주문정보</legend>
+            <input type="checkbox" checked name="aaa" id="aaa"> <span>과테말라 안티구아</span> <input type="number" id="p1"> 개 
+            <br>
+            <input type="checkbox" name="aaa" id="aaa"> <span>인도네시아 안티구아</span> <input type="number" id="p2"> 개 
+            <br>
+            <input type="checkbox" name="aaa" id="aaa"> <span>탐라는도다 안티구아</span> <input type="number" id="p3"> 개
+        </fieldset>
 
-        <!-- �ֹ��ϱ� -->
-        <!-- �ٽ��ۼ� : form �Է� �� �ʱ�ȭ  -->
+        <div align="center">
+        <input type="submit" value="주문하기"> <input type="reset" value="다시작성">
+        </div>
+    </form>
 </body>
 </html>
+
+

@@ -5,14 +5,93 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        label {  width: 100px; display: inline-block; }
+        label {
+            width: 100px;
+            display: inline-block;
+
+        }
     </style>
 </head>
 
 <body>
-    <!-- fieldset & legend -->
+    <!-- fieldset & legend(입력양식) 태크를 사용하여 아래 그림과 같이 작성하시오.-->
+
+    <!-- label -->
+
     <!-- form 태그 필요 속성 3가지 추가. -->
-    <form action="" method="">
+    <form action="">
+        <fieldset>
+            <legend>입력양식</legend>
+            <label for="aaaa">이름:</label> <input type="text" name="" id="aaaa">
+            <br>
+            <label for="bbbb">이메일:</label> <input type="text" name="" id="bbbb">
+            <br>
+            <input type="submit" value="쿼리 전송">
+        </fieldset>
+    </form>
+
+    <form action="">
+        <fieldset>
+            <legend>로그인</legend>
+
+            <label for="">아이디:</label> <input type="text" name="" required>
+            <br>
+            <label for="">패스워드:</label> <input type="password" name="" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>회원가입</legend>
+            <label for="aa">아이디:</label> <input type="required" name="aa">
+            <br>
+            <label for="bb">패스워드</label> <input type="password" name="bb">
+            <br>
+            <label for="cc">패스워드확인</label> <input type="password" name="cc">
+            <br>
+            <label for="dd">이름</label> <input type="text" name="dd" placeholder="이름을 입력하세요">
+            <br>
+            <label for="ee">이메일</label> <input type="email" name="ee">
+            <br>
+            <label for="ff">전화번호</label> <input type="tel" name="ff">
+            <br>
+            <label for="gg">생년월일</label> <input type="date" name="gg" placeholder="연도-월-일">
+        </fieldset>
+
+        <fieldset>
+            <legend>수강신청</legend>
+            <label for="a">영어초급</label> <input type="radio" name="aaa" value="a">
+            <br>
+            <label for="b">영어중급</label> <input type="radio" name="aaa" value="b">
+            <br>
+            <label for="c">영어고급</label> <input type="radio" name="aaa" value="c">
+            <br>
+            <br>
+            <label for="d">영어초급</label> <input type="checkbox" name="bbb" value="d">
+            <br>
+            <label for="e">영어중급</label> <input type="checkbox" name="bbb" value="e">
+            <br>
+            <label for="f">영어고급</label> <input type="checkbox" name="bbb" value="f">
+
+        </fieldset>
+
+        <!--selec박스-->
+        <fieldset>
+            <legend>학과</legend>
+            <select name="" id="">
+                <optgroup label="공과대학">
+                 <option value="">건축과</option>
+                 <option value="">수학과</option>
+                </optgroup>
+
+                <optgroup label="자연과학대학">
+                <option value="">수학과</option>
+                <option value="">생물학과</option>
+                </optgroup>
+
+            </select>
+        </fieldset>
+
+        <input type="submit" value="전송"> <input type="reset" value="초기화">
+
     </form>
 
 </body>

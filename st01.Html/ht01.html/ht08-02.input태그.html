@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Form Basic</title>
-    <style type="text/css">
-        input { display:block; }
-    </style>
+
 </head>
 <body>
-    <form action="" method="">
-        <!-- 사용자가 입력하는 입력 양식 -->
+    <form action="https://search.naver.com/search.naver?" method="get">
+        <input type="text" name="query" value="text">
 
-        <!-- 화면에 표시 되지 않음 -->
+        <input type="hidden" name="hidden" value="hidden">
 
-        <!-- 버튼 -->
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+        <input type="button" value="button">
+        <input type="image" src="placehold.it/100x30">
     </form>
 </body>
 </html>
