@@ -10,10 +10,11 @@
             padding:20px 40px;
             margin:0 auto;
         }
-        fieldset { margin-bottom:15px; }
+        fieldset { margin-bottom:15px; border: 0px; }
         legend { font-weight:bold; }
         ul {list-style-type: none;}
         li { line-height:30px;}
+        label {width: 100px; display: inline-block; }
     </style>
   </head>
   <body>
@@ -21,6 +22,32 @@
             <h1>프런트엔드 개발자 지원서 </h1>
             <p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
             <hr>
+
+            <form action="" method="">
+               <fieldset>
+                  <legend>개인정보</legend>
+                  <label for="a1">이름</label>
+                  <input type="text" id="a1" placeholder="공백없이 입력하세요">
+                  <br>
+                  <label for="a2">연락처</label>
+                  <input type="tel" id="a2" >
+                  <br>
+               </fieldset>
+               <fieldset>
+                 <legend>지원분야</legend>
+                  <ul>
+                    <li><input type="radio" name="aaa" value="">웹 퍼블리셔</li>
+                    <li><input type="radio" name="bbb" value"">웹 퍼블리셔 개발</li>
+                    <li><input type="radio" name="ccc" value"">개발 환경 개선</li>
+                  </ul>
+                  <legend>지원동기</legend>
+                  <textarea name="" cols="30px" rows="10px" placeholder="본사지원동기를 간력히 써주세요"> </textarea>
+
+               </fieldset>
+               <input type="submit" value="접수하기"> <input type="reset" value="다시쓰기">
+            </form>
         </div>
+
+
   </body>
 </html>
