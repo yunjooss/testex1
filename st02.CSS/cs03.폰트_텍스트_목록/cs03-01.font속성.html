@@ -3,6 +3,38 @@
 <head>
     <meta charset="utf-8">
     <title>폰트 CSS 속성</title>
+    <style>
+    #font1 {font-family: "serif"; }
+    #font2 {font-family: "나눔고딕"}
+
+    /* @import를 사용한 외부폰트사용, 나눔브러쉬 폰트사용*/
+    @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+    #font3 {font-family: "Nanum brush Script"; }
+
+    /*외부폰트사용*/
+    @font-face {
+        src : url(http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff) format("woff");
+        font-family : "NanumBarunGothicWebBold";
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic; }
+
+     #font5 {font-family: "NanumBarunGothicWebBold";
+            font-size:20px;
+            font-weight: bold;
+            font-style: italic;
+        }
+     .size1, .size2, .size3 {font-family: "NanumBarunGothicWebBol"}
+     .size1 {font-size: 40px; }
+     .size2 {font-size: 50px; }
+     .size3 {font-size: 2em;}
+
+     .no1 {font-style: normal;}
+     .no2 {font-style: italic}
+     .no3 {font-style: oblique}
+
+
+    </style>
 </head>
 <body>
     <pre>
@@ -11,18 +43,21 @@
     </pre>
 
     <h2>내부 폰트를 사용하는 텍스트 !!!</h2>
-    <p> 변경전: serif font를 이용하여 폰트를 적용한 텍스트 !!! </p>
-    <p id="font1"> 변경후: serif font를 이용하여 폰트를 적용한 텍스트 !!! </p>
+    <p> serif font 변경전: serif font를 이용하여 폰트를 적용한 텍스트 !!! </p>
+    <p id="font1"> serif font 변경후: serif font를 이용하여 폰트를 적용한 텍스트 !!! </p>
     
+
     <p> 변경전: 나눔고딕 font를 이용하여 폰트를 적용한 텍스트 !!! </p>
     <p id="font2"> 변경후: 나눔고딕 font를 이용하여 폰트를 적용한 텍스트 !!! </p>
     <hr>
+
 
     <h2>@import를 사용한 외부 폰트 사용. 나눔브러쉬 폰트 사용</h2>
     <div>나눔고딕   폰트 : http://fonts.googleapis.com/earlyaccess/nanumgothic.css </div>
     <div>나눔브러쉬 폰트 : http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css</div>
     <p> 변경전: @import를 사용한 텍스트 !!! </p>
     <p id="font3"> 변경후: @import를 사용한 텍스트 !!! </p>
+
 
     <h2>@font-face를 사용한 내부 폰트 사용. 나눔 바른 고딕 폰트 사용</h2>
     <p> 변경전: @font-face를 사용한 텍스트 !!! </p>

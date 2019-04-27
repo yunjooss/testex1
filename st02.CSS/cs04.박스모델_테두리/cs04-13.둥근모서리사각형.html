@@ -3,6 +3,21 @@
 <head>
     <meta charset="utf-8">
     <title>border radius</title>
+    <style>
+    #borderradius > div {
+        width: 200px; height:100px;
+        border: 2px solid black;
+        margin: 20px;       }
+
+    .box1 { border-radius: 10px; }
+    .box2 { border-radius: 10px 20px;}
+    .box3 { border-radius: 20px 40px 60px 80px;}
+    .box4 { border-radius: 40px 20px 80px 60px;}
+    .box5 { border-top-left-radius: 40px; 
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 80px;
+            border-bottom-left-radius: 60px; }
+    </style>
 </head>
 <body>
     <div id="borderradius">
@@ -11,6 +26,7 @@
         <div class="box2"> </div>
         <div class="box3"> </div>
         <div class="box4"> </div>
+        <div class="box5"> </div>
     </div>
 </body>
-</html>
+</html>
