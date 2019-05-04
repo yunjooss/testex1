@@ -4,6 +4,87 @@
     <meta charset="utf-8">
     <title>HTML5 Basic Page</title>
 </head>
+    <style>
+      /*브라우저 기본마진, 패딩 초기화*/
+    * {margin: 0; padding: 0; }
+    * {list-style-type: none; }
+
+    #main-navigation { line-height: 20px;
+        width: 100%; height: 30px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        }
+    
+       .outer-menu-item { 
+            padding-left: 20px; padding-right: 30px; 
+            float: left ;  } 
+
+       .pull-left {float: left;}
+
+       .pull-right {float: right;}
+
+    .input-search { 
+    border: 1px solid gray;
+    border-radius: 20px 0 0 20px;
+    vertical-align: top;
+
+    height: 20px;
+    width: 100px;
+    float: left;
+    padding-left: 15px; }
+
+    .input-search-submit { 
+     height: 24px; border: 1px solid gray;
+    border-radius: 0 20px 20px 0;
+    vertical-align: top;
+    
+    float: left;
+    margin-left: -1px;
+    height: 24px;
+    width: 50px; }
+
+    .article-header::before {clear: both; display: block; content: ""}
+
+    body {width:  960px; margin: 0 auto; /*수평 가운데 정렬*/
+         background-color: gainsboro; }
+
+    #page-wrapper {
+        background-color: white;
+        margin: 40px;
+        padding: 20px;
+        border-radius: 10px; }
+
+    #main-navigation > .pull-left .outer-menu-item {
+        float: left;
+        position: relative; 
+        padding-top: 5px; }
+    
+    .outer-menu-item:hover {
+        background-color: black; color: white; }
+        
+    /*메인메뉴타이틀설정*/
+    .outer-menu-item > .menu-title { 
+        display: block;  height: 30px;
+        text-align: center; 
+        padding: 0 20px 0 20px; }
+
+    /*서브메뉴설정*/
+    .outer-menu-item > .inner-menu {
+        background-color: white;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 40px; /*y축의미*/
+        let: 0; /*x축의미*/
+    }
+
+
+    #main-section {width: 70%; float: left;  }
+    #main-aside {float: right; vertical-align: top; }
+
+    #main-footer::before {clear: both; display: block; content: ""}
+    </style>
+
 <body>
     <div id="page-wrapper">
         <header id="main-header">
@@ -98,7 +179,8 @@
         </footer>
     </div>
 </body>
-</html>
+</html>
+
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>

@@ -3,11 +3,31 @@
 <head>
     <title>text-overflow</title>
 </head>
+    <style>
+        div.a {
+            width: 100px; 
+            border: 2px solid green; 
+
+            text-overflow: ellipsis; /*영역을 벗어나면 생략기호 보이게*/
+            overflow: hidden; /*영역을 벗어나는 애들은 감추기*/
+            white-space: nowrap; /*줄바꿈이 있으면 어떻게 처리할 것인가?*/
+        }
+        div.a:hover {
+            width: 360px;
+            overflow: visible; /*영역을 벗어나는 애들을 보이게 */
+        }
+
+    </style>
+
 <body>
     <h1>The text-overflow</h1>
 
     <p>Hover over the div below, to see the entire text.</p>
 
-    <div class="a">This is some long text that will not fit in the box.</div>
+    <div class="a">
+        <span>
+            is some long text that will not fit in the box.
+        </span> 
+    </div>
 </body>
 </html>
