@@ -4,6 +4,22 @@
     <meta charset="utf-8">
     <title>display 속성</title>
 </head>
+    <style>
+        #container {
+           display: flex;
+           flex-direction: row; /*flex 적용될 태크 부모에 display:inline-block는 직접설정*/
+        }
+        #container > div {
+            width: 200px; height: 200px;
+            border: 1px solid black;
+            margin: 10px;
+            background-color: darkseagreen;
+         
+
+        }
+
+
+    </style>
 <body>
     <div id="container">
         <div class="ex1">첫번째</div>
@@ -11,4 +27,4 @@
         <div class="ex3">세번째</div>
     </div>
 </body>
-</html>
+</html>
