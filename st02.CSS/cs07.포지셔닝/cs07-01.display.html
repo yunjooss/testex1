@@ -3,8 +3,31 @@
 <head>
     <meta charset="utf-8">
     <title>박스모델</title>
-    <style type="text/css">
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            text-align: center;
+            line-height: 6;
+        }
+        div.box1 {background-color: orange; }
+        div.box2 {background-color: lightblue; }
+        div.box3 {background-color: lawngreen; }
+        div.box4 {background-color: white; border: 1px solid black; float: right; }
+
+        div.box4::after { clear: both; display: block; content: ""; }
+
+        div.box5 {background-color: white; border: 1px solid black; }
+
+    </style>
+
+
+
 </head>
+
+
+
 <body>
     <div class="box1">박스1</div>
     <div class="box2">박스2</div>
@@ -12,4 +35,4 @@
     <div class="box4">박스4</div>
     <div class="box5">박스5</div>
 </body>
-</html>
+</html>

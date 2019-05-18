@@ -4,6 +4,25 @@
 <head>
     <meta charset="utf-8">
     <title>2단 레이아웃</title>
+    <style>
+    * {margin: 0; padding: 0;
+    list-style-type: none;
+   }
+
+    #header, #contents, #sidebar, #footer {
+          border: 2px solid gray; 
+          box-sizing: border-box; margin: 20px; padding: 20px; 
+    }
+/*box-sizing: border-box;*/
+
+    #contents { width: calc(100% - 300px - 80px ); float: left; }
+    #sidebar { background-color: gainsboro; width: 300px; float: right; }
+
+    #footer {clear: both; display: block; content:''; }
+
+ 
+
+    </style>
 </head>
 <body>
     <div id="container">
@@ -29,4 +48,4 @@
         </div>
     </div>
 </body>
-</html>
+</html>

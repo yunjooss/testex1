@@ -3,6 +3,17 @@
 <head>
     <meta charset="utf-8">
     <title>visibility 속성</title>
+    <style>
+    *{margin: 0; margin: 0;}
+    img {margin: 20px; 
+         border: 2px dotted red; 
+         }
+
+    #visibility {visibility: hidden;}
+
+    #display {display: none}
+
+    </style>
 </head>
 <body>
     <xmp>
@@ -10,9 +21,9 @@ visibility : hidden; 와 display: none; 의 차이점
 visibility : hidden; --> 공간이 남는다.
 display: none;       --> 공간이 안 남는다.
     </xmp>
-    <img src="../images/tomato.jpg">
-    <img src="../images/tomato.jpg" id="visibility" >
-    <img src="../images/tomato.jpg" id="display" >
-    <img src="../images/tomato.jpg">
+    <img src="../images/tomato.jpg" alt="1">
+    <img src="../images/tomato.jpg" id="visibility" alt="2">
+    <img src="../images/tomato.jpg" id="display" alt="3">
+    <img src="../images/tomato.jpg" alt="4">
 </body>
-</html>
+</html>

@@ -2,6 +2,17 @@
 <html>
 <head>
     <title>Ellipsis</title>
+    <style>
+    h1.ellipsis, p.ellipsis {width: 300px;
+       overflow: hidden; /*감춘다*/
+       text-overflow: ellipsis; /*축약기호 표시*/
+       white-space: nowrap;
+       }
+       
+    h1.ellipsis:hover, p.ellipsis:hover {width: 100%;}
+     
+
+    </style>
 </head>
 <body>
     <h1 class="ellipsis">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
