@@ -3,6 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>레이아웃 A ::: Auto stretch content's height</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        html, body { height: 100%;}
+        #wrap {height: 100%;}
+        #header { border: 1px red solid; height: 50px; 
+        box-sizing: border-box; }
+        #content { border: 1px green solid; height: calc(100% - 2*50px); 
+        box-sizing: border-box; }
+        #footer { border: 1px blue solid; height: 50px; 
+        box-sizing: border-box; }
+    </style>
 </head>
 <body>
     <div id="wrap">
@@ -20,4 +31,4 @@
     </div>
 </body>
 
-</html>
+</html>

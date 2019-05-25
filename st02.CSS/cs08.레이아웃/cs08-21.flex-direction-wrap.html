@@ -3,28 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <style>
+    #dir-row {
+        display: flex; 
+        flex-direction: row;
+        flex-wrap: nowrap; /*한줄에 모든 자식이 나오게 한다*/
+
+        width: 500px;
+        height: 200px;
+        margin: 0 auto;
+        border: 4px solid black; 
+    }
+    #dir-row > div {width: 33.33%; }
+    #dir-row > .row1 {background-color: red;}
+    #dir-row > .row2 {background-color: blue;}
+    #dir-row > .row3 {background-color: yellow;}
+
+    #dir-col {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap; /*자식들을 한줄에 나타나게*/
+
+        width: 500px;
+        height: 200px;
+        margin: 0 auto;
+        border: 4px solid black;      
+    }
+    #dir-col > div {width: 100%; height: 33.33%; }
+    #dir-col > .row1 {background-color: red;}
+    #dir-col > .row2 {background-color: blue;}
+    #dir-col > .row3 {background-color: yellow;}
+   
+
+    #wrap-row {display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+            width: 500px;
+            height: 200px;
+            margin: 0 auto;
+            border: 4px solid black;
+    
+    } /**/
+    #wrap-row > div {width: 40%;  }
+        #wrap-row > .row1 {background-color: red;}
+        #wrap-row > .row2 {background-color: blue;}
+        #wrap-row > .row3 {background-color: yellow;}
+
+    </style>
 </head>
 <body>
     <div id="dir-row">
-        <div><h2>1</h2></div>
-        <div><h2>2</h2></div>
-        <div><h2>3</h2></div>
+        <div class="row1"><h2>1</h2></div>
+        <div class="row2"><h2>2</h2></div>
+        <div class="row3"><h2>3</h2></div>
     </div>
 
     <br >
 
     <div id="dir-col">
-        <div><h2>1</h2></div>
-        <div><h2>2</h2></div>
-        <div><h2>3</h2></div>
+        <div class="row1"><h2>1</h2></div>
+        <div class="row2"><h2>2</h2></div>
+        <div class="row3"><h2>3</h2></div>
     </div>
 
     <br >
 
     <div id="wrap-row">
-        <div><h2>1</h2></div>
-        <div><h2>2</h2></div>
-        <div><h2>3</h2></div>
+        <div class="row1"><h2>1</h2></div>
+        <div class="row2"><h2>2</h2></div>
+        <div class="row3"><h2>3</h2></div>
     </div>
 
     <br >
@@ -36,4 +83,4 @@
     </div>
 
 </body>
-</html>
+</html>

@@ -2,7 +2,47 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>연습문제</title>
+    <style>
+    *{margin: 0; padding: 0;}
+
+    #wrapper {margin: 0 auto;} 
+
+    .img1 {background-color: orange;}
+    .img2 {background-color: blue;}
+    .img3 {background-color :palevioletred;}
+    .img4 {background-color: greenyellow;}
+
+    #wrapper { width: 1024px; }
+    #img-box > div.box {width:22%; margin: 0.5%; }
+    #img-box > div.box {height: 50px; float: left;}
+
+    @media screen and (min-width:480px) {
+            /*박스를 안보이게*/
+         #img-box {display: none; }
+     }
+
+    @media screen and (min-width:480px) and (max-width:768px) { 
+            /*한행애 1개만 나오게*/
+    #wrapper {width: 480px ;}
+    #img-box {width: 100%; }
+    #img-box > div.box { clear: both; width: 100%; margin: 10px; box-sizing: border-box; }
+    }
+
+    @media screen and (min-width:768px) and (max-width:1024px) {
+             /*한 행에 2개만 나오게*/
+         #wrapper {width: 768px; }
+         #img-box { width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap; }
+         #img-box > div.box {margin: 0.5%; width: 48%; box-sizing: border-box;  }
+     }
+    @media screen and (min-width:1024px) { }
+
+    </style>
+
 </head>
 
 <body>

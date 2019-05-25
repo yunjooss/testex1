@@ -3,6 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>레이아웃 C1</title>
+    <style>
+    *{margin: 0;}
+
+    #wrap {width: 100%; height: 80px;}
+
+    #a1 > #leftbar {float: left;}
+
+    #a1::after {clear: both; display:block; content: ""}
+    
+
+    #header {background-color: olivedrab;}
+    #leftbar {width:30%; lightcoral;float: left;}
+    #content {background-color: violet;float: left;}
+    #rightbar {background-color: lightcoral;float: left; }
+    #footer {background-color: lightpink; }
+    
+    
+    </style>
 </head>
 
 <body>
@@ -13,16 +31,18 @@
             header
         </div>
 
-        <div id="leftbar">
-            leftbar
-        </div>
+        <div id="a1">
+            <div id="leftbar">
+                leftbar
+            </div>
 
-        <div id="content">
-            content
-        </div>
+            <div id="content">
+                content
+            </div>
 
-        <div id="rightbar">
-            rightbar
+            <div id="rightbar">
+                rightbar
+            </div>
         </div>
 
         <div id="footer">
@@ -32,4 +52,4 @@
 
 </body>
 
-</html>
+</html>

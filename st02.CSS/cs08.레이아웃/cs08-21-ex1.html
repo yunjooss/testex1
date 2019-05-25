@@ -4,6 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <title>Document</title>
+    <style>
+    *{margin: 0 ; padding: 0;}
+    html, body {width: 100%; height: 100%;}
+    
+    #wrap{ display: flex;
+            flex-direction: row;
+            flex-wrap: wrap; 
+            height: 100%;
+            }
+
+     .header {width: 100%; height: 80px; background-color: red; }
+    
+
+    .slider_section ,
+    .gallery_section ,
+    .rankup_section ,
+    .latest_post_section ,
+    .popular_post_section ,
+    .banner_section ,
+    .social_section {height: calc(50% - 80px);}
+
+    .slider_section {width: 50%; background-color: darkcyan; }
+    .gallery_section {width: 25%; background-color: yellow; }
+    .rankup_section {width: 25%; background-color: greenyellow; }
+    .latest_post_section {width: 30%; background-color: violet; }
+
+    .popular_post_section {width: 30%; background-color: darkorange;}
+
+    .banner_section {width: 20%; background-color: darkgoldenrod;
+                    display: flex;
+                    flex-direction: column; 
+                    flex-wrap: wrap; }
+    .banner_box_01 { height: 50%; background-color: darkgoldenrod; }
+    .banner_box_02 { height: 50%; background-color: darkblue; }
+
+    .social_section {width: 20%; background-color: rebeccapurple; }
+
+    .footer {width: 100%; height: 80px; background-color:darkgrey; }
+
+    h1 {background-color: darkorange; 
+    width: 80px; height: 140px;
+    position:absolute;
+    left: 0; top: 0;
+    z-index: 100;
+     }
+
+
+    </style>
 </head>
 <body>
     <div id="wrap">
@@ -11,17 +59,21 @@
             <h1>1-1</h1>
             <nav>1</nav>            
         </header>
+ 
         <section class="slider_section">2</section>
         <section class="gallery_section">3</section>
         <section class="rankup_section">4</section>
         <section class="latest_post_section">5</section>
         <section class="popular_post_section">6</section>
+
         <section class="banner_section">
             <div class="banner_box_01">7-1</div>
             <div class="banner_box_02">7-2</div>
+
         </section>
         <section class="social_section">8</section>
+   
         <footer class="footer">9</footer>
     </div>
 </body>
-</html>
+</html>
